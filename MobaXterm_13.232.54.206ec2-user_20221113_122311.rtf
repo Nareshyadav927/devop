@@ -1,0 +1,176 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;\red85\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20 Authenticating with public key "Imported-Openssh-Key"\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v22.1 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u11166? SSH session to \cf5 ec2-user@13.232.54.206                    \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0\u10003?\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf6\f0\u10007?\cf0   (disabled or not supported by server)      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u11166? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Nov 13 06:17:39 2022 from 49.206.57.101\cf1\highlight2 
+\par 
+\par \cf0\highlight0        __|  __|_  )\cf1\highlight2 
+\par \cf0\highlight0        _|  (     /   Amazon Linux 2 AMI\cf1\highlight2 
+\par \cf0\highlight0       ___|\\___|___|\cf1\highlight2 
+\par 
+\par \cf0\highlight0 https://aws.amazon.com/amazon-linux-2/\cf1\highlight2 
+\par \cf0\highlight0 18 package(s) needed for security, out of 27 available\cf1\highlight2 
+\par \cf0\highlight0 Run "sudo yum update" to apply all updates.\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-8-177 ~]$ docker ps\cf1\highlight2 
+\par \cf0\highlight0 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-8-177 ~]$ sudo systemctl start docker\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-8-177 ~]$ sudo systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Sun 2022-11-13 06:16:19 UTC; 14min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0   Process: 3296 ExecStartPre=/usr/libexec/docker/docker-setup-runtimes.sh (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0   Process: 3285 ExecStartPre=/bin/mkdir -p /run/docker (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 3308 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 11\cf1\highlight2 
+\par \cf0\highlight0    Memory: 90.4M\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?3308 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --default-ulimit nofile=32768:6553...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Nov 13 06:16:19 ip-172-31-8-177.ap-south-1.compute.internal systemd[1]: Started Docker Application Container Engine.\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:16:19 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:16:19.801362354Z" level=i...ck"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757144139Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757194214Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719681458Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719729683Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554895043Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554940487Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166941503Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166983267Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Hint: Some lines were ellipsized, use -l to show in full.\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-8-177 ~]$ sudo su\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# cd /nexus-data\cf1\highlight2 
+\par \cf0\highlight0 bash: cd: /nexus-data: No such file or directory\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker pull sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Using default tag: latest\cf1\highlight2 
+\par \cf0\highlight0 latest: Pulling from sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Digest: sha256:c60752862ab18e347ae686185ffc22fbf05dbc812b0f33cd1a5d4edef7db4382\cf1\highlight2 
+\par \cf0\highlight0 Status: Image is up to date for sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 docker.io/sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run -d -p 8081:8081 --name nexus sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: Conflict. The container name "/nexus" is already in use by container "bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be". You have to remove (or rename) that container to be able to reuse that name.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# ^C\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# rm bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be\cf1\highlight2 
+\par \cf0\highlight0\f1 rm: cannot remove \lquote bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be\rquote : No such file or directory\cf1\highlight2\f0 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker pull sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Using default tag: latest\cf1\highlight2 
+\par \cf0\highlight0 latest: Pulling from sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Digest: sha256:c60752862ab18e347ae686185ffc22fbf05dbc812b0f33cd1a5d4edef7db4382\cf1\highlight2 
+\par \cf0\highlight0 Status: Image is up to date for sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 docker.io/sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run -d -p 8081:8081 --name nexus sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: Conflict. The container name "/nexus" is already in use by container "bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be". You have to remove (or rename) that container to be able to reuse that name.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# systemctl start docker\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Sun 2022-11-13 06:16:19 UTC; 19min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0   Process: 3296 ExecStartPre=/usr/libexec/docker/docker-setup-runtimes.sh (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0   Process: 3285 ExecStartPre=/bin/mkdir -p /run/docker (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 3308 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 11\cf1\highlight2 
+\par \cf0\highlight0    Memory: 90.6M\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?3308 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --default-ulimit nofile=32768:6553...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Nov 13 06:16:19 ip-172-31-8-177.ap-south-1.compute.internal systemd[1]: Started Docker Application Container Engine.\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:16:19 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:16:19.801362354Z" level=i...ck"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757144139Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757194214Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719681458Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719729683Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554895043Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554940487Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166941503Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166983267Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Hint: Some lines were ellipsized, use -l to show in full.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker pull sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Using default tag: latest\cf1\highlight2 
+\par \cf0\highlight0 latest: Pulling from sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Digest: sha256:c60752862ab18e347ae686185ffc22fbf05dbc812b0f33cd1a5d4edef7db4382\cf1\highlight2 
+\par \cf0\highlight0 Status: Image is up to date for sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 docker.io/sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run -d -p 8081:8081 --name nexus sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: Conflict. The container name "/nexus" is already in use by container "bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be". You have to remove (or rename) that container to be able to reuse that name.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker ps\cf1\highlight2 
+\par \cf0\highlight0 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker ps -a\cf1\highlight2 
+\par \cf0\highlight0 CONTAINER ID   IMAGE             COMMAND                  CREATED        STATUS                      PORTS     NAMES\cf1\highlight2 
+\par \cf0\highlight0\f1 bf8161afa1c7   sonatype/nexus3   "/opt/sonatype/nexus\'85"   19 hours ago   Exited (0) 15 hours ago               nexus\cf1\highlight2\f0 
+\par \cf0\highlight0\f1 414ade5aaf4d   8da               "/opt/sonatype/nexus\'85"   44 hours ago   Exited (0) 38 hours ago               infallible_bardeen\cf1\highlight2\f0 
+\par \cf0\highlight0\f1 1f3bfe0f7f65   8da               "/opt/sonatype/nexus\'85"   44 hours ago   Exited (255) 44 hours ago             friendly_elbakyan\cf1\highlight2\f0 
+\par \cf0\highlight0\f1 91f50f8ee0b7   8da               "/opt/sonatype/nexus\'85"   44 hours ago   Exited (255) 44 hours ago             eloquent_jackson\cf1\highlight2\f0 
+\par \cf0\highlight0\f1 9945ad5d679d   8da03             "/opt/sonatype/nexus\'85"   44 hours ago   Exited (255) 44 hours ago             charming_jemison\cf1\highlight2\f0 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run hello wrld\cf1\highlight2 
+\par \cf0\highlight0 Unable to find image 'hello:latest' locally\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: pull access denied for hello, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run -d -p 8081:8081 --name nexus sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: Conflict. The container name "/nexus" is already in use by container "bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be". You have to remove (or rename) that container to be able to reuse that name.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Sun 2022-11-13 06:16:19 UTC; 25min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0   Process: 3296 ExecStartPre=/usr/libexec/docker/docker-setup-runtimes.sh (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0   Process: 3285 ExecStartPre=/bin/mkdir -p /run/docker (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 3308 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 11\cf1\highlight2 
+\par \cf0\highlight0    Memory: 91.1M\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?3308 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock --default-ulimit nofile=32768:6553...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757144139Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:18:56 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:18:56.757194214Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719681458Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:19:22 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:19:22.719729683Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554895043Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:20:00 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:20:00.554940487Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166941503Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:23:18 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:23:18.166983267Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:39:46 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:39:46.547023972Z" level=e...\\n"\cf1\highlight2 
+\par \cf0\highlight0 Nov 13 06:39:46 ip-172-31-8-177.ap-south-1.compute.internal dockerd[3308]: time="2022-11-13T06:39:46.547069272Z" level=i...ed"\cf1\highlight2 
+\par \cf0\highlight0 Hint: Some lines were ellipsized, use -l to show in full.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# -l\cf1\highlight2 
+\par \cf0\highlight0 bash: -l: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker pull sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Using default tag: latest\cf1\highlight2 
+\par \cf0\highlight0 latest: Pulling from sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 Digest: sha256:c60752862ab18e347ae686185ffc22fbf05dbc812b0f33cd1a5d4edef7db4382\cf1\highlight2 
+\par \cf0\highlight0 Status: Image is up to date for sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 docker.io/sonatype/nexus3:latest\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# docker run -d -p 8081:8081 --name nexus sonatype/nexus3\cf1\highlight2 
+\par \cf0\highlight0 docker: Error response from daemon: Conflict. The container name "/nexus" is already in use by container "bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be". You have to remove (or rename) that container to be able to reuse that name.\cf1\highlight2 
+\par \cf0\highlight0 See 'docker run --help'.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# rm^C\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]# rm bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be\cf1\highlight2 
+\par \cf0\highlight0\f1 rm: cannot remove \lquote bf8161afa1c7f843b1f29b2a68487101cf63b1fbf0688d869741aa7aa9e8a6be\rquote : No such file or directory\cf1\highlight2\f0 
+\par \cf0\highlight0 [root@ip-172-31-8-177 ec2-user]#\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf8\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \pard\cf0\highlight0\f2\fs14 
+\par }
+ 

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+  - name: download the artifacts from the nexus
+    get_url:
+      url: http://3.110.49.235:8081/repository/test/com/ncodeit/ncodeit-hello-world/3.0/ncodeit-hello-world-3.0.war
+	  dest: /root/naresh/benny
+  - name: deployment
+    copy:
+      src: /root/naresh/benny/ncodeit-hello-world-3.0.war
+      dest: /opt/apache-tomcat-9.0.69/webapps
+      mode: u+rw,g-wx,o-rwx

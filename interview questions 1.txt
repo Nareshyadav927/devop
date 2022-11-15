@@ -1,0 +1,298 @@
+Interview Questions:
+====================
+DevOps:
+=======
+What is DevOps?
+Devops is a methodology which help to remove the gap between development and operations team.
+Implementation of devops will help us to track the bugs at initial stage and also release the applciation faster.
+What are the different stages of DevOps?
+Plan
+Code
+Build
+Test
+Release
+Operate
+monitor and 
+Feedback.
+What are the methodologies before DevOps?
+Waterfall model and agile process.
+Have you worked on Agile Process?
+Yes,where we have scrum master who will be assigning set of task for sprint.
+What is the Sprint duration?
+2 weeks.
+Difference between IAAS,PAAS and SAAS?
+SaaS (Software as a service) platforms involve software that is available via third-party over the Internet. 
+Examples of popular SaaS providers include: 
+BigCommerce.
+Google Workspace, Salesforce.
+Dropbox.
+MailChimp.
+ZenDesk.
+DocuSign.
+Slack.
+Hubspot.
+PaaS (Platform as a service) focuses primarily on hardware and software tools available over the internet. 
+Examples of popular PaaS providers include: 
+AWS Elastic Beanstalk.
+Heroku.
+Windows Azure (mainly used as PaaS).
+Force.com.
+Google App Engine.
+OpenShift.
+Apache Stratos.
+Adobe Magento Commerce Cloud.
+IaaS(Infrastructre as a service) works primarily with cloud-based and pay-as-you-go services such as storage, networking and virtualization.
+Examples of popular IaaS providers include: 
+AWS EC2.
+Rackspace.
+Google Compute Engine (GCE).
+Digital Ocean.
+Microsoft Azure.
+Magento 1 Enterprise Edition.
+Linux:
+=====
+Tell 10 linux commands?
+Netstat -na -- To check the running port numbers
+Ps -ef -- TO check the running services
+find / -name filename -- find a file
+grep keyword filename -- Find a keyword from a file
+mkdir -- to create the direcotry
+top -- cpu utilization
+sed -- to replace a text from file at run time
+kill -9 -- to kill the process
+touch filename -- to create zero byte size file
+tar -xvf filename.tar -- TO bundle a directory
+Command to check for the running ports?
+netstat -na | grep port_number
+Command to check the processes running?
+ps -ef
+Command to replace a word from file?
+sed -i 's/old-text/new-text/g' input.txt
+Examples for SED and AWK commands?
+awk example : https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+Sed Example : https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
+What is swap memory?
+When the actual memory of RAM is full then swap memory is used to process the request.
+Command to kill a process?
+kill -9 PID
+process to free disk space?
+When we see memory alert then follow the below steps:
+1)Login to the ec2 using ssh
+2) df -h -- shows the filesystems memory and check which filesystem is occupied with space example /var
+3) cd /var -- Change to var directory
+4) du -sk  -- TO check the each directory size in var
+5) Delete the directory / clear the sapce which has consumed more space.  
+What is Inode?
+An inode is an index node. It serves as a unique identifier for a specific piece of metadata on a given filesystem. 
+Each piece of metadata describes what we think of as a file.
+We have disk space available but still unable to create a file,what might be the reason?
+Basically an inode is used for each file on the filesystem. 
+So running out of inodes generally means we are unable to create file even if we have filesystem.
+Command to find a file and delete the file using the same command?
+find / -name "FILE-TO-FIND" -exec rm -rf {} \;
+Bash Scripting:
+==============
+#! in bash scripting means = Shebang
+Difference between bash and shell script?
+Shell scripting is a method to automate tasks as a collection of commands.
+Shell script can be execute on any shell.
+Example of shell scripting:
+#!/bin/sh
+myString="GeeksforGeeks"
+echo "myString: $myString"
+Bash: Bourne after shell.
+Bash scripting is a subset of shell scripting.
+Example of bash scripting:
+#!/bin/bash 
+myString="GeeksforGeeks"
+echo "myString: $myString"
+Write a bash script to check a directory in a location,and should dispaly the message if the directory is available?
+#!/bin/bash
+if [ -d "/path/to/dir" ] 
+then
+    echo "Directory /path/to/dir exists." 
+else
+    echo "Error: Directory /path/to/dir does not exists."
+fi
+Write a bash script to check if a service is running or not,if not running then script should start the service?
+#!/bin/bash
+service=replace_me_with_a_valid_service
+if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
+then
+echo "$service is running!!!"
+else
+/etc/init.d/$service start
+fi
+How to know whether the previous command has been executed successfully or not?
+With the help of exit status.
+If exit status is 0 then it has been successfully executed.
+If Exit status is 1 then it has not been successfully executed.
+$? is the exit status of the most recently-executed command.
+$# = Total number of command line arguments passed.
+$* = It's a space separated string of all arguments. For example, if $1 is "hello" and $2 is "world", then $* is "hello world".
+$@ = Stores all the arguments that were entered on the command line.
+$_ = special variable
+How to run bash script in the background?
+Use nohup to run the script in background.
+Example:
+sudo nohup ./hello_world.sh
+Which version of linux are you using?
+We can say RHEL 7.9 or amazon linux 
+Note: The versions will get changed as per time.
+Git & GitHub:
+=============
+What will git init do ?
+This will help us to initialize .git folder in local repository.
+What does .git contains?
+.git file contains the configuration of the repository,like hooks,config etc..
+Why do we use git ?
+Git is a version control tool which is used to track the changes of the project.
+Which branching strategy are you using?
+We use GITFLOW startegy.
+Release branch is used for PRODUCTION Environment.
+Develop branch is used for development/staging Environment.
+Feature branch is used for next updates.
+Hotfixes is used for fix the bugs of Production server.
+Master is used as a copy of RELEASE branch.
+Git cherry-pick?
+Cherry-pick is used to pick a specific commit of a branch to another branch.
+Git stash?
+For example if iam working on a specific branch and i dont want to save or commit the changes,
+in the mean time i got the request to work on other file from same branch then i can use gitstash.
+This will help me to push the files to temporary stash memory.
+Git rebase?
+This is used to Merge two different branches.
+Git merge?
+THis is used to merge two different branches.
+Git fork?
+This is used to copy a repo from other account to our account on Github.
+Difference between git clone and git pull?
+Git clone is used to download the complete repository from central to local.
+Git pull is to pull the latest changes of code from central to local.
+Difference Between Git merge and Git Rebase?
+Git merge and Rebase are used to merge the two branches but git rebase will keep the commit
+history more clear than git merge.
+Difference between Git pull and git fetch?
+Git pull is to pull the latest changes of code from central to local.
+Git fetch is used to pull the metadata configuration to local like branches,configuration,HEAD,Ref etc..
+Is Git a distributed repository system or central repository system?
+Git is a central repository system.
+Difference between Distributed and Central Repository?
+The main difference between centralized and distributed version control is that, in centralized version control, 
+the versions are saved in the remote repository, while in distributed version control,
+ versions can be saved in the remote repository as well as in local repositories of the local machines.
+Which version of git are you using?
+git version 2.34.1.windows.1
+What are merge conflicts?
+If we have two similar files in different branches with similar content,
+when we try to merge these branches then there is a chance to see merge conflicts.
+THis happens because git will not apply the auto-merge strategy if the file is in same region.
+How to resolve the merge conflicts?
+By default git will Auto-Merge many chnages,but if we see merge conflicts then git will leave that to us to resolve.
+In this case there is no automation way to resolve the conflicts.
+we need to check the differences in both the commit and manually make changes and push them back to repo.
+This will help us to resolve the merge conflicts.
+Note: Mostly Merge conflicts will be taken care by Development Team as they are aware of the code changes.
+Apache Tomcat:
+==============
+Default port number of Tomcat?
+Tomcat runs on 8080 port number.
+Default Deployment location of Tomcat?
+Webapps will be the default deployment lcoation.
+Can we run multiple tomcat servers,If yes then please explain the process?
+Yes we can run multiple tomcat servers by changing the startup and shutdown port numbers of one server.
+How to create Users in tomcat?
+We can create users in tomcat-users.xml file.
+Tomcat is Developed in ___________   language?
+Java language.
+What are the dependencies for tomcat?
+Java is the only prerequisite for tomcat.
+Apache Tomcat is ________ server?
+Application Server.
+Difference between app and web servers?
+App server is mainly used for to serve dynamic content.
+Web servers are used to serve static content.
+list of app servers available in the market?
+Tomcat
+Jboss
+Weblogic
+Which version of tomcat are you using?
+Tomcat-9.0.65
+File name of Apache Tomcat Logs?
+catalina.out is the log file for tomcat.
+How to change the port number of Tomcat?
+Go to tomcat>conf folder
+Edit server.xml
+Search "Connector port"
+Replace "8080" by your port number
+Restart tomcat server.
+Nginx and Apache:
+=================
+Default port for apache?
+Default for Apache is 80.
+Default port for nginx?
+Default port for Apache is 80.
+Difference between apache and nginx?
+Apache and Nginx both are web servers.
+nginx can be used as load balancer and we dont need any extra configurations.
+Apache can be used as load balander but we need to do extra configurations.
+Nginx is pretty fast than apache in  serving static content.
+Default deployment location for apache and nginx?
+Apache:/var/www/html/
+Nginx: /usr/share/nginx/html
+Log File names of apache and nginx?
+Apache: /var/log/httpd/access_log & /var/log/httpd/error_log
+Nginx:  /var/log/nginx/access_log & /var/log/nginx/error_log
+How to change the default port of apache and nginx?
+Apache: /etc/httpd/conf/httpd.conf
+Nginx: /etc/nginx/nginx.conf
+HA PROXY:
+=========
+What is HA Proxy?
+HA proxy is the high availability, open source load balancer, reverse based proxy which is used for maintaining the website to work smoothly without causing any overload. 
+What is reverse Proxy?
+Reverse proxy server will be at the front of the servers such that when the users sent the request the reverse proxy server acts as load balancer and distributes the 
+traffic to the servers. Due to this the users can't directly intercat with the servers. 
+Configuration file name of HA PROXY?
+haproxy.cfg
+How to configure HA Proxy?
+We can configure the haproxy at etc/haproxy/haproxy.cfg
+AWS:
+====
+List of aws services you have worked on?
+I have worked on IAM,ec2,s3,applciation load balancer,Route53,VPC,CLoud watch and cloudformation templates.
+What is region and availability zone in aws?
+A region is the collection of avaialbility zones/data centres. A availabilty zone is an independent data centre.
+what is edge location?
+Edge locations are used for delivering the content with low latency and high transfer rate.
+Name the global services of aws?
+S3, IAM, cloudfront, route53
+What is aws access key and secret key?
+AWS access key and secret key are generate for connecting to the AWS Account through the CLI.
+Ec2:
+====
+Ec2 stands for?
+Elastic Cloud Compute.
+How many types of ec2 are available?
+On Demand,Reserved and Spot Instances.
+Different families of ec2?
+General purpose, storage optimized, compute optimized, memory optimized, accelerated computing.
+What is the type of ec2 you are using?
+On Demand (t2 large -- 2 core cpu and 8 gb memory)
+Can we attach multiple ec2 to one ebs volume?
+No We can't attached multiple ec2 to same ebs volumes,but we can attach multiple ebs to single ec2.
+What if the pem key of ec2 is lost?
+If the pem key is lost then we need to take the sanpshot of the ec2 and launch a new ec2 using the snapshot using a new PEM key.
+Can we connect to ec2 if the pem is lost,if yes then explain the process?
+No we can't connect to ec2 without the pem key.
+Only way is possible to take snapshot and launch using new pem key or if we have copied the ssh keygen to the ec2 earlier then we can login without pem key.
+How to take a snapshot of ec2?
+Select the ec2,go to settings and click on snapshot.
+What is a snapshot?
+Snapshots are a point of time copy of the ebs.
+Example i have launched one amazon linux ec2 and installed jenkins and took snapshot then
+the same snapshot can we used to launch new ec2 and by default i will be havings jenkins in it.
+A snapshot of t2.micro has been taken,can we change the type of instance when using the snapshot to launch new ec2?
+A snapshot of t2.micro can't be chnaged to t2.large.
+we can increase the ebs volumes but not decrease the volume.
+Collaps
